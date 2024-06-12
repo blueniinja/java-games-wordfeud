@@ -1,7 +1,9 @@
 package com.jakobniinja;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.GridLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -41,15 +43,25 @@ public class WordBuilder extends JFrame {
     // main panel
     add(mainPanel, BorderLayout.CENTER);
 
-    LetterPanel letterPanel = new LetterPanel("A", 1);
-    mainPanel.add(letterPanel);
-
     // score panel
 
     // play panel
 
     // board panel
+    boardPanel.setBackground(Color.BLACK);
+    boardPanel.setLayout(new GridLayout(ROWS, COLS));
+    mainPanel.add(boardPanel);
 
+    BagOfLetters letters = new BagOfLetters();
+    for (int row = 0; row < ROWS; row++) {
+      for (int col = 0; col < COLS; col++) {
+        LetterPanel letterPanel = letters.pickALetter();
+        board[row][col] = letterPanel;
+        boardPanel.add(letterPanel);
+
+      }
+    }
+    
     // button panel
 
     // listeners

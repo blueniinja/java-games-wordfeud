@@ -3,6 +3,7 @@ package com.jakobniinja;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.HeadlessException;
 import java.awt.image.BufferedImage;
@@ -32,6 +33,9 @@ public class LetterPanel extends JFrame {
 
   private Font smallFont = new Font(Font.DIALOG, Font.BOLD, 12);
 
+  private FontMetrics bigFM;
+  private FontMetrics smallFM;
+
 
   public LetterPanel() {
     initPanel();
@@ -52,6 +56,8 @@ public class LetterPanel extends JFrame {
         JOptionPane.showMessageDialog(null, message);
       }
     }
+    bigFM = getFontMetrics(bigFont);
+    smallFM = getFontMetrics(smallFont);
   }
 
   public void paintComponent(Graphics g) {

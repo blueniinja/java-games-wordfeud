@@ -1,7 +1,15 @@
 
-¤
-java:S1488U"aImmediately return this expression instead of assigning it to the temporary variable "dimension".(ƒ‹€¶8¿”Íà€2J$c9385a0e-fdd9-4a4f-8a57-d288e734f5d0
-o
-java:S1948"'Make "image" transient or serializable.(ÂåóÛüÿÿÿÿ8²ëŸà€2J$74dadc55-3782-40eb-a859-5f388a7b2b4a
-‚
-java:S1161T":Add the "@Override" annotation above this method signature(Ú„ÎÕşÿÿÿÿ8«œÌà€2J$8ea632e5-ed57-4e89-9485-c460f7d16097
+~
+java:S1488["aImmediately return this expression instead of assigning it to the temporary variable "dimension".(ƒ‹€¶8¯ò‘á€2
+q
+java:S1450$"TRemove the "bigFM" field and declare it as a local variable in the relevant methods.(‚ò°8¯ò‘á€2
+x
+java:S1450%"VRemove the "smallFM" field and declare it as a local variable in the relevant methods.(‚µæ‹ûÿÿÿÿ8¯ò‘á€2
+I
+java:S1948"'Make "image" transient or serializable.(ÂåóÛüÿÿÿÿ8¯ò‘á€2
+\
+java:S1161Z":Add the "@Override" annotation above this method signature(Ú„ÎÕşÿÿÿÿ8¿ò‘á€2
+F
+java:S1068$")Remove this unused "bigFM" private field.(‚ò°8¿ò‘á€2
+M
+java:S1068%"+Remove this unused "smallFM" private field.(‚µæ‹ûÿÿÿÿ8¿ò‘á€2
