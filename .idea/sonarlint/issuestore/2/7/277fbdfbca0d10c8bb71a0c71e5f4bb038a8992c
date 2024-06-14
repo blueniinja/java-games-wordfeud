@@ -1,9 +1,9 @@
 
 ›
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÎïŞi8¥Àøı1J$c903fed6-f2f7-48c4-b6b1-8f453125212f
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÎïŞi8¥Àøı1J$37ae1c24-08d8-4308-839d-22eb343a8aaf
 v
-java:S1905".Remove this unnecessary cast to "ArrayList[]".(“§Í¿ÿÿÿÿÿ8¥Àøı1J$b122133f-b828-4ff6-a7b4-6c4ea022190d
-r	java:S106G"+Replace this use of System.out by a logger.(˜ÙÌÙşÿÿÿÿ8ÎµŸøı1J$61e563b7-3178-45db-bd76-8a458736898e
-r	java:S106I"+Replace this use of System.out by a logger.(Ò‘ø¯ıÿÿÿÿ8ÎµŸøı1J$284e05ff-52d0-4441-9049-e59e3e3d2d42
-z
-java:S1135K"2Complete the task associated to this TODO comment.(¡Ô–Óıÿÿÿÿ8Ãº²øı1J$34493fe2-6325-48b2-9c8f-1c6a36b1a51f
+java:S1905".Remove this unnecessary cast to "ArrayList[]".(“§Í¿ÿÿÿÿÿ8¥Àøı1J$479e698d-fa72-405d-b08f-470667d63a25
+r	java:S106G"+Replace this use of System.out by a logger.(˜ÙÌÙşÿÿÿÿ8ÎµŸøı1J$b424dd1d-e5be-49ab-90f1-26f447eda397
+r	java:S106I"+Replace this use of System.out by a logger.(Ò‘ø¯ıÿÿÿÿ8ÎµŸøı1J$eeb622ba-ab76-4be2-b5a3-1f8244724315
+u
+java:S1135K"2Complete the task associated to this TODO comment.(Òã–‰8Ãº²øı1J$fa7c7c18-c858-400b-8db6-e364a456161a
