@@ -9,13 +9,29 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowStateListener;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
 import javax.swing.WindowConstants;
@@ -157,12 +173,30 @@ public class WordBuilder extends JFrame {
     buttonPanel.add(acceptButton);
 
     undoButton.setEnabled(false);
+    undoButton.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        undo();
+      }
+    });
     buttonPanel.add(undoButton);
 
     clearButton.setEnabled(false);
+    clearButton.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        clear();
+      }
+    });
     buttonPanel.add(clearButton);
 
     JButton endButton = new JButton("End Game");
+    endButton.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        endGame();
+      }
+    });
     buttonPanel.add(endButton);
 
     for (int row = 0; row < ROWS; row++) {
@@ -186,18 +220,158 @@ public class WordBuilder extends JFrame {
     }
 
     // listeners
+    addComponentListener(new ComponentAdapter() {
+      @Override
+      public void componentResized(ComponentEvent e) {
+        resizeWindow();
+      }
+    });
+    addWindowStateListener(new WindowStateListener() {
+      @Override
+      public void windowStateChanged(WindowEvent e) {
+        resizeWindow();
+      }
+    });
 
+  }
+
+  private void resizeWindow() {
+    int newWidth = mainPanel.getWidth();
+    int newHeight = mainPanel.getHeight();
+
+    int panelSize = newWidth / MAX;
+    if (panelSize > newHeight / 10) {
+      panelSize = newHeight / 10;
+    }
+
+    Dimension boardSize = new Dimension(panelSize * COLS, panelSize * ROWS);
+    boardPanel.setMaximumSize(boardSize);
+
+    Dimension playSize = new Dimension(panelSize * MAX, panelSize);
+    playPanel.setMaximumSize(playSize);
+  }
+
+  private void endGame() {
+    ArrayList<String> records = new ArrayList<>();
+    int index = 0;
+
+    try {
+      BufferedReader in = new BufferedReader(new FileReader(new File(FILENAME)));
+      String s = in.readLine();
+      while (s != null) {
+        records.add(s);
+        int indexOfBlank = s.indexOf(" ");
+        String scoreString = s.substring(0, indexOfBlank);
+        int oldScore = Integer.parseInt(scoreString);
+        if (oldScore > score) {
+          index++;
+        }
+        s = in.readLine();
+      }
+      in.close();
+    } catch (FileNotFoundException e) {
+      String message = "File " + FILENAME + " was not found.";
+      JOptionPane.showMessageDialog(this, message);
+    } catch (IOException e) {
+      String message = "File " + FILENAME + " could not be opened.";
+      JOptionPane.showMessageDialog(this, message);
+    } catch (NumberFormatException e) {
+      String message = "File " + FILENAME + "  contains invalid Data \nA new highscore list will be created";
+      JOptionPane.showMessageDialog(this, message);
+    }
+
+    String message = "";
+    if (index < 10) {
+      message += "Your score of " + score + " made it to the scoreboard!\n";
+      DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+      Date date = new Date();
+      String newRecord = score + " " + dateFormat.format(date);
+
+      records.add(index, newRecord);
+      if (records.size() > 10) {
+        records.remove(10);
+      }
+
+      saveRecord(records);
+    }
+    message = "TOP 10 HIGH SCORE\n";
+    for (int i = 0; i < records.size(); i++) {
+      message += records.get(i) + "\n";
+    }
+
+    message += "Do you want to play again?";
+    int option = JOptionPane.showConfirmDialog(this, message, "Play Again?", JOptionPane.YES_NO_OPTION);
+
+    if (JOptionPane.YES_OPTION == option) {
+      newGame();
+    } else {
+      System.exit(0);
+    }
+  }
+
+  private void newGame() {
+    clear();
+
+    BagOfLetters letters = new BagOfLetters();
+    for (int row = 0; row < ROWS; row++) {
+      for (int col = 0; col < COLS; col++) {
+        LetterPanel letterPanel = letters.pickALetter();
+        letterPanel.setColumn(col);
+        board[row][col].copy(letterPanel);
+      }
+    }
+    score = 0;
+    points = 0;
+    word = "";
+    scoreLabel.setText("0");
+    updateButtonsAndPoints();
+  }
+
+  private void saveRecord(ArrayList<String> records) {
+    try {
+      BufferedWriter out = new BufferedWriter(new FileWriter(new File(FILENAME)));
+      for (int i = 0; i < records.size(); i++) {
+        out.write(records.get(i));
+        out.newLine();
+      }
+      out.close();
+    } catch (IOException e) {
+      String message = "An error occurred when writing to file " + FILENAME + ". \n Your score could not be saved.";
+      JOptionPane.showMessageDialog(this, message);
+    }
+  }
+
+  private void clear() {
+    int numberOfTimes = word.length();
+    for (int i = 0; i < numberOfTimes; i++) {
+      undo();
+    }
+  }
+
+  private void undo() {
+    int last = word.length() - 1;
+    word = word.substring(0, last);
+    LetterPanel lastPlayedPanel = played[last];
+    points -= lastPlayedPanel.getPoints();
+    int col = lastPlayedPanel.getColumn();
+    for (int row = ROWS - 1; row > 0; row--) {
+      board[row][col].copy(board[row - 1][col]);
+    }
+    board[0][col].copy(lastPlayedPanel);
+    lastPlayedPanel.setEmpty();
+
+    updateButtonsAndPoints();
   }
 
   private void accept() {
     int newPoints = points * word.length();
     score += newPoints;
-    scoreLabel.setText(""+score);
+    scoreLabel.setText("" + score);
 
     for (int i = 0; i < word.length(); i++) {
       played[i].setEmpty();
     }
-    points =0;
+    points = 0;
     word = "";
     updateButtonsAndPoints();
   }
@@ -239,7 +413,7 @@ public class WordBuilder extends JFrame {
       undoButton.setEnabled(true);
       clearButton.setEnabled(true);
       int newPoints = points * word.length();
-      pointsLabel.setText(""+ newPoints);
+      pointsLabel.setText("" + newPoints);
     }
   }
 

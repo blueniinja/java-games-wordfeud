@@ -1,9 +1,25 @@
 
 q
-java:S1604–"(Make this anonymous inner class a lambda(¹éÀÈşÿÿÿÿ8àû’º2J$938bd646-ffbc-455f-b91d-0e1327f56501
+java:S1604¦"(Make this anonymous inner class a lambda(¹éÀÈşÿÿÿÿ8¤üš³‚2J$e48b1ee3-1e2a-4ccc-a600-5192da96f56c
+q
+java:S1604°"(Make this anonymous inner class a lambda(–úøÿÿÿÿÿ8¤üš³‚2J$988666ef-0e88-4b07-8c72-ffa63b8d2575
+q
+java:S1604¹"(Make this anonymous inner class a lambda(Ò«Ú“úÿÿÿÿ8¤üš³‚2J$cd96ba4c-908f-4d27-88d2-be2283522336
+q
+java:S1604Â"(Make this anonymous inner class a lambda(ŸŠöëşÿÿÿÿ8¤üš³‚2J$0aa23a32-2da0-4783-9487-07a4418ba50b
+q
+java:S1604å"(Make this anonymous inner class a lambda(Ê„Êÿÿÿÿÿ8¤üš³‚2J$4bbf295e-3a01-49a3-974f-d8b5e39de391
+_
+java:S1643«"Use a StringBuilder instead.(ÈÆğ8·üš³‚2J$89585505-3ffb-442f-8751-2a3f35f8f45f
+
+java:S1192‘"FDefine a constant instead of duplicating this literal "File " 3 times.(ˆ¨®ÿÿÿÿÿ8·üš³‚2J$13264ac3-a0b5-463f-ba6a-450feab9b3b3
+
+java:S2095ƒ"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ïúâ¯8·üš³‚2J$6b1fa60c-140b-46c6-a923-b6844203d7b4
+•
+java:S2095Ì"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(´¶Ò”ÿÿÿÿÿ8·üš³‚2J$61e7091e-8985-402e-b1f9-e56610fabf86
 t
-java:S19483",Make "dictionary" transient or serializable.(àÆèûÿÿÿÿ8ñû’º2J$75bb0d24-7840-434a-a448-b1d22800354b
+java:S1948C",Make "dictionary" transient or serializable.(àÆèûÿÿÿÿ8Äüš³‚2J$9b4cb7e1-bc4f-4986-b688-cb5ae1ffa521
+„
+java:S1854";Remove this useless assignment to local variable "message".(Ì€ñÀşÿÿÿÿ8…ıš³‚2J$dbd1a347-25af-4c58-981f-d94f6b1b9dec
 †
-java:S1126é"BReplace this if-then-else statement by a single method invocation.(ĞİĞ8ÊŒåº2J$31b13e1b-5712-4366-9881-de6cba6bb972
-o
-java:S1068!",Remove this unused "FILENAME" private field.(İ¦±½8„ü’º2J$c0d1886b-c195-4af1-9836-626e69282918
+java:S1126—"BReplace this if-then-else statement by a single method invocation.(ĞİĞ8§ıš³‚2J$d6507892-6680-4e35-964b-b3c19b5d6fea
