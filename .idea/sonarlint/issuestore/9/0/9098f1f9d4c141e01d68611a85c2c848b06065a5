@@ -1,25 +1,43 @@
 
 q
-java:S1604¦"(Make this anonymous inner class a lambda(¹éÀÈşÿÿÿÿ8¤üš³‚2J$e48b1ee3-1e2a-4ccc-a600-5192da96f56c
+java:S1604·"(Make this anonymous inner class a lambda(¹éÀÈşÿÿÿÿ8ÛÿŠü„2J$63d0ab31-d08e-41a3-9987-f1724c33abad
 q
-java:S1604°"(Make this anonymous inner class a lambda(–úøÿÿÿÿÿ8¤üš³‚2J$988666ef-0e88-4b07-8c72-ffa63b8d2575
+java:S1604Á"(Make this anonymous inner class a lambda(–úøÿÿÿÿÿ8ÛÿŠü„2J$40a69fd8-7ef0-4c7c-8193-0c06f727c7d2
 q
-java:S1604¹"(Make this anonymous inner class a lambda(Ò«Ú“úÿÿÿÿ8¤üš³‚2J$cd96ba4c-908f-4d27-88d2-be2283522336
+java:S1604Ê"(Make this anonymous inner class a lambda(Ò«Ú“úÿÿÿÿ8ÛÿŠü„2J$4bc221a6-a779-4068-9161-e64662bccb4e
 q
-java:S1604Â"(Make this anonymous inner class a lambda(ŸŠöëşÿÿÿÿ8¤üš³‚2J$0aa23a32-2da0-4783-9487-07a4418ba50b
+java:S1604Ó"(Make this anonymous inner class a lambda(ŸŠöëşÿÿÿÿ8ÛÿŠü„2J$1fb0bccb-a256-4bad-9c73-34fc3ca91ed3
 q
-java:S1604å"(Make this anonymous inner class a lambda(Ê„Êÿÿÿÿÿ8¤üš³‚2J$4bbf295e-3a01-49a3-974f-d8b5e39de391
+java:S1604ö"(Make this anonymous inner class a lambda(Ê„Êÿÿÿÿÿ8ÛÿŠü„2J$21000c78-544c-473b-b277-0705aaad8bc6
 _
-java:S1643«"Use a StringBuilder instead.(ÈÆğ8·üš³‚2J$89585505-3ffb-442f-8751-2a3f35f8f45f
+java:S1643Ô"Use a StringBuilder instead.(ÈÆğ8…è’ü„2J$a2c26667-96f6-4115-8159-874a465a75bb
 
-java:S1192‘"FDefine a constant instead of duplicating this literal "File " 3 times.(ˆ¨®ÿÿÿÿÿ8·üš³‚2J$13264ac3-a0b5-463f-ba6a-450feab9b3b3
-
-java:S2095ƒ"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ïúâ¯8·üš³‚2J$6b1fa60c-140b-46c6-a923-b6844203d7b4
+java:S1192º"FDefine a constant instead of duplicating this literal "File " 3 times.(ˆ¨®ÿÿÿÿÿ8…è’ü„2J$dc32f0e0-f344-46da-b79e-97dee87ca884
 •
-java:S2095Ì"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(´¶Ò”ÿÿÿÿÿ8·üš³‚2J$61e7091e-8985-402e-b1f9-e56610fabf86
+java:S2095ö"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(´¶Ò”ÿÿÿÿÿ8•è’ü„2J$1612a2eb-9ba8-49ba-93bc-417af68a0fc2
+
+java:S2095Ø"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ˆâÙq8”è’ü„2J$c04e7078-7bde-439c-8ee8-913a1aa9c7de
+
+java:S2095¬"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ïúâ¯8…è’ü„2J$48c9db4b-3607-4dc8-b98b-733e6eadd87f
 t
-java:S1948C",Make "dictionary" transient or serializable.(àÆèûÿÿÿÿ8Äüš³‚2J$9b4cb7e1-bc4f-4986-b688-cb5ae1ffa521
+java:S1948Q",Make "dictionary" transient or serializable.(àÆèûÿÿÿÿ8ûÿŠü„2J$637c3ed7-67f3-4b25-8335-e3d6c5bb9976
+}
+java:S3252E"5Use static access with "java.awt.Frame" for "NORMAL".(ü˜äüÿÿÿÿ8€‹ü„2J$080a1001-2c90-4bf6-8e3b-ad39a9d596c4
+r
+java:S1874“".Remove this use of "resize"; it is deprecated.(û¨†ş8èè’ü„2J$34c3bb9c-6168-48ce-b447-a46ee30e5af6
+r
+java:S1874›".Remove this use of "resize"; it is deprecated.(¸Œ»—8èè’ü„2J$41e4b3b8-0041-49e6-bb6a-91dc03bdd758
 „
-java:S1854";Remove this useless assignment to local variable "message".(Ì€ñÀşÿÿÿÿ8…ıš³‚2J$dbd1a347-25af-4c58-981f-d94f6b1b9dec
+java:S1854Æ";Remove this useless assignment to local variable "message".(Ì€ñÀşÿÿÿÿ8èè’ü„2J$846dc004-a58c-4577-b739-b35e9d6516a8
 †
-java:S1126—"BReplace this if-then-else statement by a single method invocation.(ĞİĞ8§ıš³‚2J$d6507892-6680-4e35-964b-b3c19b5d6fea
+java:S1126Á"BReplace this if-then-else statement by a single method invocation.(ĞİĞ8™é’ü„2J$aad979c5-479c-4073-a423-571fec487b20
+s
+java:S1068="+Remove this unused "windowX" private field.(¿”Ëƒşÿÿÿÿ8¿€‹ü„2J$a9a83062-112f-440a-bdb2-c3d47a167f8c
+m
+java:S1068?"+Remove this unused "windowY" private field.(ÄÇ‚c8¿€‹ü„2J$5fa441ea-a310-45b2-86cf-d99842ebedea
+s
+java:S1068A"+Remove this unused "windowW" private field.(Ó•Îøÿÿÿÿ8¿€‹ü„2J$db20247c-dc01-4a13-a644-31abacf4267d
+n
+java:S1068C"+Remove this unused "windowH" private field.(ÈŠó–8¿€‹ü„2J$ec97efe9-f1b4-43e6-a4bb-d65818adec61
+w
+java:S1068E"/Remove this unused "windowState" private field.(ü˜äüÿÿÿÿ8¿€‹ü„2J$d586e2f8-6e5e-4d82-b575-d0558a59b95d
