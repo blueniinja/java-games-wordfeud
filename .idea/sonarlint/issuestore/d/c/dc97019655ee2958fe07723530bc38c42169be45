@@ -1,0 +1,46 @@
+
+q
+java:S1604À"(Make this anonymous inner class a lambda(¹éÀÈşÿÿÿÿ8‘†£§…2J$32295270-282a-4c06-949d-770e6fe0ec02
+q
+java:S1604È"(Make this anonymous inner class a lambda(–úøÿÿÿÿÿ8‘†£§…2J$a24e889d-f464-44b8-880c-263dd3e417d1
+q
+java:S1604Ğ"(Make this anonymous inner class a lambda(Ò«Ú“úÿÿÿÿ8‘†£§…2J$3b55861a-3084-40fa-af32-d8526d061560
+q
+java:S1604Ø"(Make this anonymous inner class a lambda(ŸŠöëşÿÿÿÿ8‘†£§…2J$4eb492c2-1f9c-47f9-82df-caebf59caef0
+q
+java:S1604å"(Make this anonymous inner class a lambda(Ê„Êÿÿÿÿÿ8‘†£§…2J$43fea966-05b2-4bd4-a28f-d9fe8edfeb72
+è
+java:S6539&"ŸSplit this â€œMonster Classâ€ into smaller and more specialized ones to reduce its dependencies on other classes from 23 to the maximum authorized 20 or less.(Õâ”øÿÿÿÿ8œ²¬§…2J$8ea970ba-623b-4eb5-9932-dd3575dade1c
+
+java:S2293À"YReplace the type specification in this constructor call with the diamond operator ("<>").(®íÒ”8œ²¬§…2J$8bd0b9ac-0287-4de0-abc4-d04d1e01e706
+_
+java:S1643ï"Use a StringBuilder instead.(ÈÆğ8œ²¬§…2J$853564ce-59d1-4e56-a204-cf4cbaa380cc
+Š
+java:S1192Ô"FDefine a constant instead of duplicating this literal "File " 3 times.(²Å›—8œ²¬§…2J$82a9cf85-29f2-439f-84ce-309c08bf8d88
+
+java:S2095”"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ˆâÙq8œ²¬§…2J$40a0927f-7c42-4f91-b55f-1e84523c2ffe
+•
+java:S2095§"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(©ğ ßşÿÿÿÿ8œ²¬§…2J$429ada8a-5bec-48cd-82c5-3287bdfff7f2
+•
+java:S2095ş"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(´¶Ò”ÿÿÿÿÿ8¬²¬§…2J$1981439e-e03a-4a85-9da1-15bf2759c8e8
+
+java:S2095Æ"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ïúâ¯8¬²¬§…2J$005b70da-5f5b-4cf3-8fbd-79ad53e41021
+t
+java:S1948D",Make "dictionary" transient or serializable.(‡¬•òşÿÿÿÿ8¾†£§…2J$7917a7a5-b6f5-49e5-839a-b0ec17074cdd
+}
+java:S3252d"5Use static access with "java.awt.Frame" for "NORMAL".(ü˜äüÿÿÿÿ8Ö†£§…2J$a0256c14-22a6-4b88-b4b5-f2fbe08b4e1f
+~
+java:S1161³":Add the "@Override" annotation above this method signature(ãÆĞÂ8û†£§…2J$5db79c5b-654a-4a74-b6c2-c212830b2982
+ƒ
+java:S1161à":Add the "@Override" annotation above this method signature(ÃÅñÛüÿÿÿÿ8‡£§…2J$59528da5-cd9b-4ef3-96f8-f79dddbcdcb9
+ƒ
+java:S1161ì":Add the "@Override" annotation above this method signature(†§şıÿÿÿÿ8•‡£§…2J$15a9808e-1db2-4493-b2f5-286b38064993
+†
+java:S1126"BReplace this if-then-else statement by a single method invocation.(ĞİĞ8©‡£§…2J$fac03237-9199-48a3-8e63-90bc683b43b5
+‰
+java:S2147´"ECombine this catch with the one at line 435, which has the same body.(ï­£Ä8³¬§…2J$8182c042-2826-4c04-b853-055d10013e33
+
+java:S2147µ"ECombine this catch with the one at line 436, which has the same body.(é–³öûÿÿÿÿ8³¬§…2J$385796c9-0988-487f-ad56-5da582728e32
+l	java:S108³")Either remove or fill this block of code.(‹±ÃÆ8–³¬§…2J$770dbba8-6cae-483b-8506-2820001f6b66
+l	java:S108´")Either remove or fill this block of code.(ï­£Ä8–³¬§…2J$0274e72a-25bb-4708-99c5-f5f9b7643689
+q	java:S108µ")Either remove or fill this block of code.(é–³öûÿÿÿÿ8–³¬§…2J$d2c9d4f3-0d1a-4eb8-b888-7f411c2d290e

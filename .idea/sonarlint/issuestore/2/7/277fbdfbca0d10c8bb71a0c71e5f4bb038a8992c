@@ -1,9 +1,0 @@
-
-›
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÎïÞi8‡Õ’¥…2J$4b45ab43-a835-4aff-b01b-7fbbf7521f74
-‰
-java:S1075"ARefactor your code to get this URI from a customizable parameter.(‰çµ“øÿÿÿÿ8—Õ’¥…2J$eed51db2-af80-4289-b57e-26ed1b0dfeaa
-v
-java:S1905".Remove this unnecessary cast to "ArrayList[]".(“§Í¿ÿÿÿÿÿ8—Õ’¥…2J$618a1870-3300-43b9-8567-b0bac7f605ae
-r	java:S106N"+Replace this use of System.out by a logger.(˜ÙÌÙþÿÿÿÿ8—Õ’¥…2J$bcdf8089-df90-4115-8fa2-9d5ee6535c52
-r	java:S106P"+Replace this use of System.out by a logger.(Ò‘ø¯ýÿÿÿÿ8—Õ’¥…2J$6095cf6a-4156-4c14-bec1-c185588e4313
