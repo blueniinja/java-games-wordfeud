@@ -1,43 +1,38 @@
 
-q
-java:S1604·"(Make this anonymous inner class a lambda(¹éÀÈşÿÿÿÿ8ÛÿŠü„2J$63d0ab31-d08e-41a3-9987-f1724c33abad
-q
-java:S1604Á"(Make this anonymous inner class a lambda(–úøÿÿÿÿÿ8ÛÿŠü„2J$40a69fd8-7ef0-4c7c-8193-0c06f727c7d2
-q
-java:S1604Ê"(Make this anonymous inner class a lambda(Ò«Ú“úÿÿÿÿ8ÛÿŠü„2J$4bc221a6-a779-4068-9161-e64662bccb4e
-q
-java:S1604Ó"(Make this anonymous inner class a lambda(ŸŠöëşÿÿÿÿ8ÛÿŠü„2J$1fb0bccb-a256-4bad-9c73-34fc3ca91ed3
-q
-java:S1604ö"(Make this anonymous inner class a lambda(Ê„Êÿÿÿÿÿ8ÛÿŠü„2J$21000c78-544c-473b-b277-0705aaad8bc6
-_
-java:S1643Ô"Use a StringBuilder instead.(ÈÆğ8…è’ü„2J$a2c26667-96f6-4115-8159-874a465a75bb
-
-java:S1192º"FDefine a constant instead of duplicating this literal "File " 3 times.(ˆ¨®ÿÿÿÿÿ8…è’ü„2J$dc32f0e0-f344-46da-b79e-97dee87ca884
-•
-java:S2095ö"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(´¶Ò”ÿÿÿÿÿ8•è’ü„2J$1612a2eb-9ba8-49ba-93bc-417af68a0fc2
-
-java:S2095Ø"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ˆâÙq8”è’ü„2J$c04e7078-7bde-439c-8ee8-913a1aa9c7de
-
-java:S2095¬"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ïúâ¯8…è’ü„2J$48c9db4b-3607-4dc8-b98b-733e6eadd87f
-t
-java:S1948Q",Make "dictionary" transient or serializable.(àÆèûÿÿÿÿ8ûÿŠü„2J$637c3ed7-67f3-4b25-8335-e3d6c5bb9976
-}
-java:S3252E"5Use static access with "java.awt.Frame" for "NORMAL".(ü˜äüÿÿÿÿ8€‹ü„2J$080a1001-2c90-4bf6-8e3b-ad39a9d596c4
-r
-java:S1874“".Remove this use of "resize"; it is deprecated.(û¨†ş8èè’ü„2J$34c3bb9c-6168-48ce-b447-a46ee30e5af6
-r
-java:S1874›".Remove this use of "resize"; it is deprecated.(¸Œ»—8èè’ü„2J$41e4b3b8-0041-49e6-bb6a-91dc03bdd758
-„
-java:S1854Æ";Remove this useless assignment to local variable "message".(Ì€ñÀşÿÿÿÿ8èè’ü„2J$846dc004-a58c-4577-b739-b35e9d6516a8
-†
-java:S1126Á"BReplace this if-then-else statement by a single method invocation.(ĞİĞ8™é’ü„2J$aad979c5-479c-4073-a423-571fec487b20
-s
-java:S1068="+Remove this unused "windowX" private field.(¿”Ëƒşÿÿÿÿ8¿€‹ü„2J$a9a83062-112f-440a-bdb2-c3d47a167f8c
-m
-java:S1068?"+Remove this unused "windowY" private field.(ÄÇ‚c8¿€‹ü„2J$5fa441ea-a310-45b2-86cf-d99842ebedea
-s
-java:S1068A"+Remove this unused "windowW" private field.(Ó•Îøÿÿÿÿ8¿€‹ü„2J$db20247c-dc01-4a13-a644-31abacf4267d
-n
-java:S1068C"+Remove this unused "windowH" private field.(ÈŠó–8¿€‹ü„2J$ec97efe9-f1b4-43e6-a4bb-d65818adec61
-w
-java:S1068E"/Remove this unused "windowState" private field.(ü˜äüÿÿÿÿ8¿€‹ü„2J$d586e2f8-6e5e-4d82-b575-d0558a59b95d
+K
+java:S1604¾"(Make this anonymous inner class a lambda(¹éÀÈşÿÿÿÿ8­³˜¥…2
+K
+java:S1604È"(Make this anonymous inner class a lambda(–úøÿÿÿÿÿ8­³˜¥…2
+K
+java:S1604Ñ"(Make this anonymous inner class a lambda(Ò«Ú“úÿÿÿÿ8­³˜¥…2
+K
+java:S1604Ú"(Make this anonymous inner class a lambda(ŸŠöëşÿÿÿÿ8­³˜¥…2
+K
+java:S1604"(Make this anonymous inner class a lambda(Ê„Êÿÿÿÿÿ8­³˜¥…2
+9
+java:S1643ß"Use a StringBuilder instead.(ÈÆğ8½³˜¥…2
+i
+java:S1192Å"FDefine a constant instead of duplicating this literal "File " 3 times.(ˆ¨®ÿÿÿÿÿ8½³˜¥…2
+i
+java:S2095ã"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ˆâÙq8½³˜¥…2
+j
+java:S2095·"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ïúâ¯8½³˜¥…2
+o
+java:S2095"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(´¶Ò”ÿÿÿÿÿ8½³˜¥…2
+o
+java:S2095÷"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(©ğ ßşÿÿÿÿ8½³˜¥…2
+N
+java:S1948Q",Make "dictionary" transient or serializable.(àÆèûÿÿÿÿ8½³˜¥…2
+W
+java:S3252E"5Use static access with "java.awt.Frame" for "NORMAL".(ü˜äüÿÿÿÿ8½³˜¥…2
+^
+java:S1854Ñ";Remove this useless assignment to local variable "message".(Ì€ñÀşÿÿÿÿ8İ³˜¥…2
+`
+java:S1126Ì"BReplace this if-then-else statement by a single method invocation.(ĞİĞ8ì³˜¥…2
+c
+java:S2147‡"ECombine this catch with the one at line 518, which has the same body.(ï­£Ä8ñ³˜¥…2
+h
+java:S2147ˆ"ECombine this catch with the one at line 519, which has the same body.(é–³öûÿÿÿÿ8ñ³˜¥…2
+F	java:S108†")Either remove or fill this block of code.(‹±ÃÆ8ñ³˜¥…2
+F	java:S108‡")Either remove or fill this block of code.(ï­£Ä8ñ³˜¥…2
+K	java:S108ˆ")Either remove or fill this block of code.(é–³öûÿÿÿÿ8ñ³˜¥…2

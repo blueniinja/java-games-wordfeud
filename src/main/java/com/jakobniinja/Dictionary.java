@@ -2,14 +2,15 @@ package com.jakobniinja;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 public class Dictionary {
 
-  private static final String FILENAME = "enable1_3-15.txt";
+  private static final String FILENAME = "/enable1_3-15.txt";
 
   private static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -22,15 +23,23 @@ public class Dictionary {
       wordList[i] = new ArrayList<String>();
     }
 
-    try (BufferedReader in = new BufferedReader(new FileReader(FILENAME))) {
-      String word = in.readLine();
+    try {
 
-      while (word != null) {
-        char letter = word.charAt(0);
-        int list = ALPHABET.indexOf(letter);
-        wordList[list].add(word);
-        word = in.readLine();
+      InputStream input = getClass().getResourceAsStream(FILENAME);
 
+      if (input != null) {
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(input));
+        String word = in.readLine();
+
+        while (word != null) {
+          char letter = word.charAt(0);
+          int list = ALPHABET.indexOf(letter);
+          wordList[list].add(word);
+          word = in.readLine();
+
+        }
+        in.close();
       }
     } catch (FileNotFoundException e) {
       String message = "File " + FILENAME + " was not found.";
@@ -51,9 +60,7 @@ public class Dictionary {
     int index = 0;
     String word2 = "";
 
-    while (index < wordList[list].size()
-        && word2.compareTo(word) < 0
-        && !found) {
+    while (index < wordList[list].size() && word2.compareTo(word) < 0 && !found) {
       word2 = wordList[list].get(index);
       if (word2.equals(word)) {
         found = true;
@@ -72,6 +79,5 @@ public class Dictionary {
     } else {
       System.out.println(word + " is not a word.");
     }
-    // TODO: Complete Listing 11-70
   }
 }

@@ -16,3 +16,7 @@
 .src/main/java/com/jakobniinja/WordBuilder.java,9\0\9098f1f9d4c141e01d68611a85c2c848b06065a5
 _
 /src/main/java/com/jakobniinja/BagOfLetters.java,a\5\a51cac6ef8a252362dfdad94e0f0973568844206
+G
+wordBuilderSettings.txt,d\7\d7d53aa2de1cb3804a1e927609b708f39ffcb9fb
+=
+highScore.txt,d\6\d6e3ef539bc7cbd7fefb1244866beab4a80347a6

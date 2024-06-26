@@ -107,10 +107,17 @@ public class WordBuilder extends JFrame {
     initGUI();
 
     setTitle("Word Builder");
-    pack();
-    setLocationRelativeTo(null);
+    readSettings();
+    if (windowX < 0) {
+      pack();
+      setLocationRelativeTo(null);
+    } else {
+      setLocation(windowX, windowY);
+      setSize(windowW, windowH);
+    }
     setVisible(true);
     setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    setExtendedState(windowState);
   }
 
   private void initGUI() {
@@ -219,9 +226,13 @@ public class WordBuilder extends JFrame {
     for (int row = 0; row < ROWS; row++) {
       for (int col = 0; col < COLS; col++) {
         LetterPanel letterPanel = letters.pickALetter();
-        letterPanel.setColumn(col);
-        board[row][col] = letterPanel;
-        boardPanel.add(letterPanel);
+
+        if (letterPanel != null) {
+
+          letterPanel.setColumn(col);
+          board[row][col] = letterPanel;
+          boardPanel.add(letterPanel);
+        }
       }
     }
 
@@ -476,7 +487,7 @@ public class WordBuilder extends JFrame {
       out.newLine();
       out.write("" + w);
       out.newLine();
-      out.write(""+h);
+      out.write("" + h);
       out.newLine();
       out.write(state);
 
@@ -484,6 +495,29 @@ public class WordBuilder extends JFrame {
     } catch (IOException e) {
       String message = "Error saving your windows settings to file " + SETTINGS_FILE + "\nCould not save your settings.";
       JOptionPane.showMessageDialog(this, message);
+    }
+  }
+
+  private void readSettings() {
+    try {
+      BufferedReader in = new BufferedReader(new FileReader(new File(SETTINGS_FILE)));
+      String s = in.readLine();
+      windowX = Integer.parseInt(s);
+      s = in.readLine();
+
+      windowY = Integer.parseInt(s);
+      s = in.readLine();
+      windowW = Integer.parseInt(s);
+
+      s = in.readLine();
+      windowH = Integer.parseInt(s);
+
+      s = in.readLine();
+      windowState = Integer.parseInt(s);
+      in.close();
+    } catch (FileNotFoundException e) {
+    } catch (IOException e) {
+    } catch (NumberFormatException e) {
     }
   }
 
