@@ -11,28 +11,24 @@ public class Dictionary {
   private static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 
   @SuppressWarnings("unchecked")
-  private ArrayList<String>[] wordList =  new ArrayList[26];
+  private final ArrayList<String>[] wordList = new ArrayList[26];
 
   public Dictionary() {
     for (int i = 0; i < 26; i++) {
-
-      wordList[i] = new ArrayList<String>();
-
+      wordList[i] = new ArrayList<>();
     }
 
-    try {
+    try (BufferedReader in = new BufferedReader(new FileReader(FILENAME))) {
 
-      BufferedReader in = new BufferedReader(new FileReader(FILENAME));
       String word = in.readLine();
       while (word != null) {
         char letter = word.charAt(0);
         int list = ALPHABET.indexOf(letter);
-        if (list != -1) { // Ensure the first letter is in ALPHABET
+        if (list != -1) { // Ensure the firUt letter is in ALPHABET
           wordList[list].add(word);
         }
         word = in.readLine();
       }
-      in.close();
     } catch (IOException e) {
       String message = "File " + FILENAME + " could not be opened.";
       JOptionPane.showMessageDialog(null, message);

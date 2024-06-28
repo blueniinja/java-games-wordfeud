@@ -16,7 +16,7 @@ public class LetterPanel extends JPanel {
 
   private static final Color BROWN = new Color(49, 22, 3);
 
-  private static final String IMAGENAME = "/WoodTile.jpg";
+  private static final String IMAGE_NAME = "/WoodTile.jpg";
 
   private String letter = "";
 
@@ -26,7 +26,7 @@ public class LetterPanel extends JPanel {
 
   private int size = 40;
 
-  private BufferedImage image = null;
+  private transient BufferedImage image;
 
   private Font bigFont = new Font(Font.DIALOG, Font.BOLD, size * 3 / 4);
 
@@ -49,13 +49,13 @@ public class LetterPanel extends JPanel {
   private void initPanel() {
     if (image == null) {
       try {
-        InputStream input = getClass().getResourceAsStream(IMAGENAME);
+        InputStream input = getClass().getResourceAsStream(IMAGE_NAME);
         if (input != null) {
 
           image = ImageIO.read(input);
         }
       } catch (IOException e) {
-        String message = "Couldn't open file " + IMAGENAME + ".";
+        String message = "Couldn't open file " + IMAGE_NAME + ".";
         JOptionPane.showMessageDialog(null, message);
       }
     }
@@ -66,7 +66,7 @@ public class LetterPanel extends JPanel {
   @Override
   public void paintComponent(Graphics g) {
     super.paintComponent(g);
-    if (letter.length() == 0) {
+    if (letter.isEmpty()) {
       g.setColor(BROWN);
       g.fillRect(0, 0, size, size);
     } else {

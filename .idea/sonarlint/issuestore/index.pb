@@ -18,8 +18,6 @@ M
 src/main/java/Dictionary.java,6\7\67945bb62743e971794e5746e7d5826d3d5b2d29
 M
 src/main/java/TitleLabel.java,e\a\eac1ddfe26f5d4f422bf4e6a1393d7758a71ca60
-P
- src/main/java/BagsOfLetters.java,2\c\2c979aa6428d371184c92747afea2fcb6322b0c3
 >
 highScores.txt,e\b\ebe1cb1246d6140f5e1432eb10a7f72f0eafa9ba
 @

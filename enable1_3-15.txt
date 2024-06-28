@@ -13,6 +13,15 @@ man
 net
 owl
 pen
+nail
+ten
+ran
+pet
+eat
+bad
+mid
+sit
+lit
 rat
 son
 tin
